@@ -184,7 +184,7 @@ class WrappingMediaHandlerBase extends MediaHandler {
    * @param mixed $args,... - arguments to forward
    * @return mixed
    */
-  private function relegateTo( $f, ...$args ) {
+  protected function relegateTo( $f, ...$args ) {
     return $this->wrapped->$f( ...$args );
   }
 

@@ -694,7 +694,7 @@ class Core {
               // In all these cases, just continue to (maybe) retry.
               break;
           }
-          $this->logger->warning( "Tika responded with status {$status}" );
+          $this->logger->warning( "Tika responded with status {$httpStatus}" );
         }
         --$triesRemaining;
         if ( $triesRemaining > 0 ) {
